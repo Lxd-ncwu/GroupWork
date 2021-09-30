@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="demo()">
+    <div style="margin-left: 600px;">
+        <div id="fall"
+            style="border-radius: 50%; width: 30px; height: 30px; background: red; position: relative; right: 0px; bottom: 40px">
+        </div>
+    </div>
+    <script type="text/javascript">
+        let i = null;
+        function demo() {
+            let f = document.getElementById('fall');
+            f.style.right = '0px';
+            f.style.bottom = '40px';
+            let h = 1, v = 1, hp = 0.1, vp = 0.6
+            i = setInterval(function() {
+                if (f) {
+                    let r = parseInt(f.style.right) + h
+                    let b = parseInt(f.style.bottom) - v;
+                    f.style.right = r + 'px';
+                    f.style.bottom = b + 'px';
+                    if (r > 1000) {
+                        clearInterval(i);
+                    }
+                    if (b > -210) {
+                        v += 2;
+                    } else {
+                        h = (v > 0) ? v * hp : 0;
+                        v *= (v > 0) ? -1 * vp : 0;
+                    }
+                }
+            }, 30);
+        }
+    </script>
+</body>
+</html>
