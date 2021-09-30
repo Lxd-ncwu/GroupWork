@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fileinput.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/fileinput.min.js"></script>
+    <script src="js/zh.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page-header" style="text-align: center;">
+        <h1 style="color: #00BFFF;">华北水利水电大学
+            <small>学生注册页面</small>
+        </h1> 
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">姓名</span>
+        <input type="text" class="form-control" placeholder="姓名" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">年龄</span>
+        <input type="text" class="form-control" placeholder="年龄" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">学院</span>
+        <div class="form-group">
+            <select class="form-control" id="sel1" required>
+              <option>信息工程学院</option>
+              <option>数统学院</option>
+              <option>物电学院</option>
+              <option>马克思主义学院</option>
+            </select>
+          </div>
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">专业</span>
+        <input type="text" class="form-control" placeholder="专业" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">账号</span>
+        <input type="text" class="form-control" placeholder="账号" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">密码</span>
+        <input type="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">邮箱</span>
+        <input type="email" class="form-control" placeholder="邮箱" aria-describedby="basic-addon1" style="text-indent: 4px;">
+    </div>
+    <div class="input-group col-xs-2">
+        <span class="input-group-addon" id="basic-addon1">照片</span>
+        <input type="file" name="txt_file" id="txt_file" class="file-loading" data-show-preview="false"/>
+    </div>
+   <script>
+       $(function () {
+    //0.初始化fileinput
+    var oFileInput = new FileInput();
+    oFileInput.Init("txt_file", "/api/OrderApi/ImportOrder");
+});
+//初始化fileinput
+var FileInput = function () {
+    var oFile = new Object();
+
+    //初始化fileinput控件（第一次初始化）
+    oFile.Init = function(ctrlName, uploadUrl) {
+    var control = $('#' + ctrlName);
+    //初始化上传控件的样式
+    control.fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: uploadUrl, //上传的地址
+        allowedFileExtensions: ['jpg', 'png'],//接收的文件后缀
+        showUpload: true, //是否显示上传按钮
+        
+        //showCaption: false,//是否显示标题
+      //  browseClass: "btn btn-primary", //按钮样式     
+        //dropZoneEnabled: false,//是否显示拖拽区域
+        //minImageWidth: 50, //图片的最小宽度
+        //minImageHeight: 50,//图片的最小高度
+        //maxImageWidth: 1000,//图片的最大宽度
+        //maxImageHeight: 1000,//图片的最大高度
+        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+        //minFileCount: 0,
+        //maxFileCount: 10, //表示允许同时上传的最大文件个数
+        //enctype: 'multipart/form-data',
+        //validateInitialCount:true,
+        //previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        //msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+    });
+
+    //导入文件上传完成之后的事件
+    $("#txt_file").on("fileuploaded", function (event, data, previewId, index) {
+        $("#myModal").modal("hide");
+        var data = data.response.lstOrderImport;
+        if (data == undefined) {
+            toastr.error('文件格式类型不正确');
+            return;
+        }
+        //1.初始化表格
+        var oTable = new TableInit();
+        oTable.Init(data);
+        $("#div_startimport").show();
+    });
+}
+    return oFile;
+};
+   </script>
+  </body>
+
+</html>
