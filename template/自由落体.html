@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<body>
+    <script>
+        (function () {
+            //创建小球
+            var ball = document.createElement("div");
+            //设置小球的样式
+            ball.style.width = "100px";
+            ball.style.height = "100px";
+            ball.style.backgroundColor = "#ff6700";
+            ball.style.borderRadius = "50%";
+            ball.style.position = "absolute";
+            ball.style.left = "0";
+            ball.style.top = "0";
+            //将小球添加到body中
+            document.body.appendChild(ball);
+    
+            //获取视口的高度
+            var viewHeight = document.documentElement.clientHeight;
+    
+            //获取小球的高度
+            var ballHeight = ball.offsetHeight;
+    
+            //设置高度差
+            var maxHeight = viewHeight - ballHeight-2;
+    
+            //获取小球的top值
+            var top = parseInt(ball.style.top);
+            
+            var left = parseInt(ball.style.left);
+            //设置小球的速度和加速度
+            var v = 0;
+
+            var level_v = 2;
+    
+            const SPEED = 1.5;//定义加速度
+            const LOOS_SPEED = 1;//定义损耗值
+            const INTERVAL = 20;
+    
+            var direction = true;//表示小球向下运动
+    
+            function move() {
+                if (direction) {
+                    v += SPEED;
+                    left += level_v;
+                    top += v;//速度让其越来越快
+                    ball.style.top = top + "px";
+                    ball.style.left = left + "px";
+                    if (top > maxHeight) {//当到达浏览器底部的时候，速度减去损耗值，并对小球运动方向改变
+                        top = maxHeight;
+                        v -= LOOS_SPEED;
+                        direction = false;
+                    }
+                    //判断小球停止状态，并关闭定时器
+                    if (v <= 0) {
+                        v = 0;
+                        ball.style.top = maxHeight + "px";
+                        clearInterval(timer);
+                    }
+                } else {
+                    //小球向上运动
+                    v -= SPEED;
+                    top -= v;
+                    left += level_v;
+                    ball.style.left = left + "px";
+                    ball.style.top = top + "px";
+                    if (v <= 0) {
+                        direction = true;
+                    }
+                }
+            }
+    
+            var timer = setInterval(move, INTERVAL );
+    
+        })();
+    </script>
+</body>
+</html>
