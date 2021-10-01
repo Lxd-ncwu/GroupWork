@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<body>
+    <script>
+        (function () {
+            var ball = document.createElement("div");
+
+            ball.style.width = "100px";
+            ball.style.height = "100px";
+            ball.style.backgroundColor = "#000";
+            ball.style.borderRadius = "50%";
+            ball.style.position = "absolute";
+            ball.style.left = "0";
+            ball.style.top = "0";
+
+            document.body.appendChild(ball);
+    
+
+            var viewHeight = document.documentElement.clientHeight;
+    
+
+            var ballHeight = ball.offsetHeight;
+    
+
+            var maxHeight = viewHeight - ballHeight-2;
+    
+
+            var top = parseInt(ball.style.top);
+            
+            var left = parseInt(ball.style.left);
+                var v = 0;
+
+            var level_v = 2;
+    
+            const SPEED = 1.5;
+            const LOOS_SPEED = 1;
+            const INTERVAL = 20;
+    
+            var direction = true;
+    
+            function move() {
+                if (direction) {
+                    v += SPEED;
+                    left += level_v;
+                    top += v;
+                    ball.style.top = top + "px";
+                    ball.style.left = left + "px";
+                    if (top > maxHeight) {
+                        top = maxHeight;
+                        v -= LOOS_SPEED;
+                        direction = false;
+                    }
+                    if (v <= 0) {
+                        v = 0;
+                        ball.style.top = maxHeight + "px";
+                        clearInterval(timer);
+                    }
+                } else {
+                    v -= SPEED;
+                    top -= v;
+                    left += level_v;
+                    ball.style.left = left + "px";
+                    ball.style.top = top + "px";
+                    if (v <= 0) {
+                        direction = true;
+                    }
+                }
+            }
+    
+            var timer = setInterval(move, INTERVAL );
+    
+        })();
+    </script>
+</body>
+</html>

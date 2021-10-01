@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学生注册</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fileinput.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/fileinput.min.js"></script>
+    <script src="js/zh.js"></script>
+  </head>
+<body>
+    <div class="enroll-div">
+        <form class="enroll-form">
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">姓名</span>
+                <input type="text" class="name" placeholder="请输入姓名">
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">年龄</span>
+                <input type="text" class="age" placeholder="请输入年龄">
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">学院</span>
+                <select class="form-control" id="sel1" style="width:fit-content;" required>
+                  <option>信息工程学院</option>
+                  <option>化学与工程学院</option>
+                  <option>水利学院</option>
+                  <option>马克思主义学院</option>
+                </select>
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">专业</span>
+                <input type="text" class="specialized" placeholder="请输入专业名称">
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">邮箱</span>
+                <input type="text" class="usermail" placeholder="请输入邮箱">
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">密码</span>
+                <input type="text" class="password" placeholder="请输入密码">
+            </div>
+            <div class="input-group col-xs-2">
+                <span class="input-group-addon" id="basic-addon1">照片</span>
+                <input type="file" name="txt_file" id="txt_file" class="file-loading" style="width: fit-content;" data-show-preview="false"/>
+            </div>
+            <button onclick="alerttip()">注册</button>
+        </form>
+    </div>
+</body>
+<script>
+    function alerttip()
+    {
+        alert("注册成功");
+    }
+    $(function () {
+ var oFileInput = new FileInput();
+ oFileInput.Init("txt_file", "/api/OrderApi/ImportOrder");
+});
+var FileInput = function () {
+ var oFile = new Object();
+ oFile.Init = function(ctrlName, uploadUrl) {
+ var control = $('#' + ctrlName);
+ control.fileinput({
+     language: 'zh',
+     uploadUrl: uploadUrl,
+     allowedFileExtensions: ['jpg', 'png'],
+     showUpload: true, 
+ });
+ $("#txt_file").on("fileuploaded", function (event, data, previewId, index) {
+     $("#myModal").modal("hide");
+     var data = data.response.lstOrderImport;
+     if (data == undefined) {
+         toastr.error('文件格式类型不正确');
+         return;
+     }
+     var oTable = new TableInit();
+     oTable.Init(data);
+     $("#div_startimport").show();
+ });
+}
+ return oFile;
+};
+</script>
+</html>
