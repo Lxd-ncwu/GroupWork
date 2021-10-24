@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./indexcss.css">
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon"/> 
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>  
+            <img class="bgc" src="./images/016.jpg" width="100%" alt="">
+            <h3 class="title">欢迎来到我的网站主页</h3>
+            <h3 class="titles">No Pain,No Life</h3>
+            <img class="icon" src="./images/002.jpg" alt="">
+            <div class='ribbon'>
+                <a href='./index.html'><span>Home</span></a>
+                <a href='./about.html'><span>About</span></a>
+                <a href='./articles.html'><span>articles</span></a>
+                <a href='./Resume.html'><span>Resume</span></a>
+                <a href='./form.html'><span>Form</span></a>
+                <a href='./contact.html'><span>Contact</span></a>
+            </div>
+
+        </div>
+        <div class="icons">
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./images/教学楼.jpg" alt="" height="100px">
+                <span>美丽的教学楼</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./images/餐厅.jpg" alt="">
+                <span>每天都要徘徊好久的食堂</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./images/华水夕阳.jpg" alt="">
+                <span>傍晚时美丽的湖畔</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./images/华水图书馆.png" alt="">
+                <span>宏伟的图书馆</span>
+            </div>
+        </div>
+        <div class="introduce">
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./images/清晨.jpg" alt="">
+                <span class="introduce_item_title">懒洋洋的阳光从窗外透了进来，空气中弥漫着春草的气息，路上的行人发出了轻缓的脚步声，早晨来了，啁啾的鸟儿，烂漫的春花，透露着早晨的到来。                    
+                    </span>
+
+            </div>
+            <div class="introduce_item">
+
+                <span class="introduce_item_titles">当清晨的阳光洒进寝室，忙碌的一天又开始了，闹钟开始响起，每个人不情愿的从床上爬起，忙忙碌碌的穿梭在食堂与教室之间</span>
+                <img class="introduce_item_img" src="./images/寝室.jpg" alt="">
+            </div>
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./images/校园.jpg " alt="">
+                <span class="introduce_item_title">悠闲地午后，漫步在校园内，校园小道上窃窃私语的密友，篮球场上挥洒着汗水、肆意奔跑的少年，不禁让人感叹校园生活的美好。</span>
+            </div>
+            <div class="introduce_item">
+                <span class="introduce_item_titles">当晚自习结束后，抬头望向天空，几颗大而亮的星星挂在夜空，仿佛是天上的人儿提着灯笼在巡视那浩瀚的太空。美丽极了，裹紧衣裳，在这优美的夜色中慢慢的走回寝室。</span>
+                <img class="introduce_item_img" src="./images/星空.png" alt="">
+            </div>
+        </div>
+        <audio autoplay="autoplay" id="audio" loop="loop">
+                <source src="./music/mamomo - hometown.mp3" type="audio/MP3">
+               
+        </audio>
+        <img class="music_img" src="./images/音乐图标.jpg" alt="">
+    </div>
+
+</body>
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+</html>

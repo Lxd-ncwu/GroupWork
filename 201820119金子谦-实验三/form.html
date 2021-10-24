@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formcss.css">
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon"/> 
+</head>
+<script type="text/javascript">
+    function check(form) {
+    //document.forms.form1.username.value取得form1中Username的值 并判断是否为空
+    if (document.forms.LoginForm.uname.value == "") {
+    //如果 为""则弹出提示
+    alert("请输入用户名！");
+    //将输入焦点定位到没有输入的地方
+    document.forms.LoginForm.uname.focus();
+    //返回错误
+    return false;
+    }
+    if (document.forms.LoginForm.upwd.value == "") {
+    alert("请输入密码！");
+    document.forms.LoginForm.upwd.focus();
+    return false;
+    }
+    }
+    </script>
+<body>
+   
+    <div class="from">
+        <img class="bgc" src="./images/05.jpg" alt="">
+        <div class="submit">
+            <span class="form_title">个人信息注册</span>
+            <div class="form_input">
+                <span>姓名：</span>
+                <input class="inputs" type="text" value="jzq">
+            </div>
+            <div class="form_input">
+                <span>密码:&nbsp;&nbsp;</span>
+                <input class="inputs" type="text" value="1820119">
+            </div>
+            <div class="form_input">
+                <span>确认密码：</span>
+                <input class="inputs" type="text" value="1820119">
+            </div>
+            <div class="form_input">
+                <span>年龄：</span>
+                <input class="inputs" type="text" value="21">
+            </div>
+            <div class="form_input">
+                <span>体重：</span>
+                <input class="inputs" type="text" value="60">
+            </div>
+            <div class="form_input">
+                <span>email：</span>
+                <input class="inputs" type="text" value="123456@qq.com">
+            </div>
+            <div class="btn_submit">
+                <a href="./finish.html">
+                    <button class="btn">提交</button></a>
+                <a href="./index.html" class="back"><button class="home_href">首页</button></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
