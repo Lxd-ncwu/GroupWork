@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    .top {
+        width: 100%;
+        height: 12vh;
+        overflow: hidden;
+        background: #F6F6F6;
+        border-style: solid;
+    }
+    .top_right {
+        float: right;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav ul {
+        width: 300px;
+        list-style: none;
+        margin: 0 auto;
+    }
+    .nav ul li {
+        float: left;
+       margin: 25px 5px;
+    }
+    .center {
+        width: 100%;
+        height: 100vh;
+        background: rgb(79, 125, 194);
+    }
+    .center .left {
+        width: 20%;
+        height: 100%;
+        background: red;
+        float: left;
+    }
+    .center .left ul{
+      list-style: none;
+    }
+    .center .left ul li{
+        margin: 15px 0;
+    }
+    .center .right {
+        width: 80%;
+        height: 100%;
+        background:#FF6000;
+        float: left;
+    }
+    .center .right .titleNav{
+       margin: 15px;
+    }
+    .center .right .rightContent {
+       margin-top: 50px;
+    }
+    .center .right .rightContent ul li{
+       margin: 15px;
+       border-bottom: 1px dotted #000;  
+    }
+    </style>
+</head>
+<body>
+    <div class="content">   
+        <div class="top">
+            <div class="top_right">
+                <span>设为首页</span>
+                <span>|</span>
+                <span>加入收藏</span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>首页</li>
+                    <li>我的</li>
+                    <li>旅游攻略</li>
+                    <li>去旅游</li>
+                    <li>活动</li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div class="left">
+                <ul>
+                    <li>旅游信息</li>
+                    <li>会员注册</li>
+                    <li>网站登录</li>
+                    <li>个人资料</li>
+                    
+                </ul>
+            </div>
+            <div class="right">
+                <div class="titleNav">
+                    <span>当前位置:</span>
+                    <span>旅游攻略>></span>
+                    <span>旅游常识</span>
+
+                </div>
+                <div class="rightContent">
+                    <ul>
+                        <li>根据数据的来源不同，可以把旅游数据收集分为原始旅游数据收集和二次旅游信息收集两种。</li>
+                        <li>原始旅游数据收集是指在旅游信息或旅游数据发生的当时当地，从旅游信息或旅游数据所描述的实体上直接把信息或数据取出，</li>
+                        <li>并用某种技术手段在某种介质上记录下来；二次旅游信息收集则是指收集已记录在某种介质上，</li>
+                        <li>与所描述的实体在时间和空间上已分离开的信息或数据。</li>
+                        <li>一般来说，旅游信息系统总需要对已经收集到的旅游数据进行某些处理，</li>
+                        <li>以便得到某些更加符合需要或更加反映本质的信息，</li>
+                        <li>或者使信息更适于旅游企业人员与旅游者使用，这就是旅游数据的加工。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

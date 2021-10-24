@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkname(){
+            var name  = document.getElementById("name").value;
+            if(name!="")
+            {
+                document.getElementById("tishi4").innerHTML="<br><font color='green'>姓名正确</font>";
+                document.getElementById("submit").disabled =false;
+            }
+            else{
+                document.getElementById("tishi4").innerHTML="<br><font color='red'>姓名不能为空</font>";
+                document.getElementById("submit").disabled =true;
+            }
+        }
+        function checkpassword(){
+            var password  = document.getElementById("password").value;
+            var repassword  = document.getElementById("repassword").value;
+            if(password==repassword)
+            {
+                document.getElementById("tishi1").innerHTML="<br><font color='green'>两次密码一致</font>";
+                document.getElementById("submit").disabled =false;
+            }
+            else{
+                document.getElementById("tishi1").innerHTML="<br><font color='red'>两次密码不一致</font>";
+                document.getElementById("submit").disabled =true;
+            }
+        }
+        function checkweight(){
+            var weight  = document.getElementById("weight").value;
+            if(weight<50)
+            {
+                document.getElementById("tishi3").innerHTML="<br><font color='red'>体重不能小于50公斤</font>";
+                document.getElementById("submit").disabled =true;
+            }
+            if(weight>150)
+            {
+                document.getElementById("tishi3").innerHTML="<br><font color='red'>体重不能大于150公斤</font>";
+                document.getElementById("submit").disabled =true;
+            }
+            else{
+                document.getElementById("submit").disabled =false;
+            }
+        }
+        function checkage(){
+            var age  = document.getElementById("age").value;
+            if(age<17)
+            {
+                document.getElementById("tishi2").innerHTML="<br><font color='red'>年龄不能小于17</font>";
+                document.getElementById("submit").disabled =true;
+            }
+            else{
+                document.getElementById("submit").disabled =false;
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mid{
+            width: 700px;
+            height: 700px;
+            border-style: solid;
+            background:lavender;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="mid">
+        <div class="register">
+            <h1>注册</h1><br>
+            <input type="text" id="name" placeholder="姓名" onmouseup="checkname()">
+            <span id="tishi4"></span><br>
+            <input type="password" id="password" placeholder="密码"><br>
+            <input type="password" id="repassword" placeholder="确认密码" onkeyup="checkpassword()">
+            <span id="tishi1"></span></input><br>
+            <input type="text" id="age" placeholder="年龄" onkeyup="checkage()">
+            <span id="tishi2"></span></input><br>
+            <input type="text" id="weight" placeholder="体重" onkeyup="checkweight()">
+            <span id="tishi3"></span></input><br>
+            <input type="text" id="email" placeholder="Email"><br>
+            <input type="submit" value="注册"><br>
+        </div>
+    </div>
+</body>
+</html>
