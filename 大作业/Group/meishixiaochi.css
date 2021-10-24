@@ -1,0 +1,115 @@
+body{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 254);
+}
+
+.logo{
+    margin-left: -350px;
+    float: left;
+    width:160px;
+    height:90px;
+}
+
+.meishixiaochi{
+    margin:0 auto;
+}
+
+.msxc{
+    width: 1200px;
+    height: 250px;
+    background-color:black;
+    margin: 0px auto;
+}
+
+.msxc-photo{
+    position: absolute;
+    z-index: 1;
+}
+
+.msxc-text{
+    font-family: "华文行楷";
+    font-size: 130px;
+    text-align: center;
+    color:white;
+    position: relative;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+}
+
+.menu ul{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 1200px;
+    list-style-type: none;
+    background-color:rgb(187, 86, 207);
+}
+
+.menu ul li{
+    float: left;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+
+.menu ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    color: black;
+}
+
+.msxcphoto{
+    float: left;
+    margin: 0 auto;
+}
+
+.text{
+    float: right;
+	width :820px;
+	border:1px solid rgb(188, 101, 206);
+	border-radius: 20px;
+	margin-top:8px;
+	margin-right: 15px;
+	padding:10px;
+	font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体" ;
+	font-size: 16px;
+    line-height: 30px;
+}
+
+.msxcphoto:hover img{
+    opacity: 0.5;
+    filter: alpha(opacity=70);
+}
+
+.msxcphoto:hover img:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.q1:hover{
+    background:  rgb(146, 58, 163);
+}
+.q2:hover{
+    background:  rgb(146, 58, 163);
+}
+.q3:hover{
+    background:  rgb(146, 58, 163);
+}
+.q4:hover{
+    background:  rgb(146, 58, 163);
+}
+.q5:hover{
+    background:  rgb(146, 58, 163);
+}
+.q6:hover{
+    background:  rgb(146, 58, 163);
+}

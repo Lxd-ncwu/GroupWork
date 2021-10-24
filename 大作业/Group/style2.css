@@ -1,0 +1,101 @@
+body
+{
+    background: #111;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+.letstravel
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 30px 90px;
+    font-size: 50px;
+    font-weight:bold;
+    color: #333;
+    text-decoration: none;
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+}
+.about .imgbx{
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+.about .imgbx img
+{
+    border-radius: 15px;
+}
+.about .first
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+}
+.about .second
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+}
+.titletext
+{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text
+{
+    color: #fff;
+    font-size: 1em;
+}
+.btn
+{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
+.turnback .btn1
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    left: 629px;
+}

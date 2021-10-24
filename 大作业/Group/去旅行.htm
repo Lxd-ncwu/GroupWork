@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>去旅行</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="PublicStyle.css">
+    <script>
+        var i=0;
+        var arr=new Array(); 
+ 
+        arr[0]="tripcut1.png";
+        arr[1]="tripcut2.png";
+        arr[2]="tripcut3.png";
+        arr[3]="tripcut4.png";
+ 
+ 
+        function slide_photos()
+        {
+            var photo=document.getElementById("slide_photo");
+            if (i==arr.length-1) 
+            {
+                i=0;
+            }
+            else
+            {
+                i+=1;
+            }
+            photo.src=arr[i]; 
+        }
+        setInterval("slide_photos()",2000);
+    </script>
+</head>
+<body>
+    <section class="header">
+        <a href="#" class="logo"><h2>🏝Travel</h2></a>
+        <div class="toggle">              
+            <div class="dropdown">
+                <a href="首页.htm" class="head">首页</a>
+            </div>
+            <div class="dropdown">
+                <a href="去旅行.htm#" class="head">去旅行</a>
+            </div>
+            <div class="dropdown">
+                <a href="旅行攻略.htm" class="head">旅游攻略</a>
+            </div>
+            <div class="dropdown">
+                <a href="登录.htm" class="head">登录 /</a><a href="注册.htm" class="head"> 注册</a>
+            </div>
+            <div class="dropdown">
+                <img src="toggle.png" class="dropbtn">
+              </div>
+    </section>
+    <section class="banner">
+        <img src="fengjing.png" class="fitBg">
+        <p class="letstravel">去旅行<br>让生活更快乐</p>
+    </section>
+
+    <section class="about">
+        <div class="top">
+            <div class="left">
+                <div class="top-left-div">
+                    <img src="trip1.png">
+                    <a href="#" class="a2">国内旅游</a>
+                    <div class="div1">
+                        <a href="#">三亚</a>
+                        <a href="#">丽江</a>
+                        <a href="#">厦门</a>
+                        <a href="#">成都</a>
+                        <a href="#">西安</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip2.png">
+                    <a href="#" class="a2">日本</a>
+                    <div class="div1">
+                        <a href="#">东京</a>
+                        <a href="#">大阪</a>
+                        <a href="#">冲绳</a>
+                        <a href="#">北海道</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip3.png">
+                    <a href="#" class="a2">东南亚 南亚 泰国</a>
+                    <div class="div1">
+                        <a href="#">普吉岛</a>
+                        <a href="#">清迈</a>
+                        <a href="#">巴厘岛</a>
+                        <a href="#">马尔代夫</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip4.png">
+                    <a href="#" class="a2">香港 澳门 台湾</a>
+                    <div class="div1">
+                        <a href="#">台北</a>
+                        <a href="#">垦丁</a>
+                        <a href="#">高维</a>
+                        <a href="#">香港</a>
+                        <a href="#">迪士尼</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip5.png">
+                    <a href="#" class="a2">欧洲 美洲</a>
+                    <div class="div1">
+                        <a href="#">美国</a>
+                        <a href="#">英国</a>
+                        <a href="#">法国</a>
+                        <a href="#">意大利</a>
+                        <a href="#">德国</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip6.png">
+                    <a href="#" class="a2">澳洲 中东 非洲</a>
+                    <div class="div1">
+                        <a href="#">澳大利亚</a>
+                        <a href="#">毛里求斯</a>
+                    </div>
+                </div>
+                <div class="top-left-div">
+                    <img src="trip7.png">
+                    <a href="#" class="a2">热门海岛</a>
+                    <div class="div1">
+                        <a href="#">巴厘岛</a>
+                        <a href="#">普吉岛</a>
+                        <a href="#">塞班</a>
+                        <a href="#">斐济</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul id="photos">
+                    <li><img id="slide_photo" src="tripcut1.png"></li>
+                </ul>
+                <div class="top-right-div">
+                    <img src="tripimg1.png">
+                    <img src="tripimg2.png">
+                    <img src="tripimg3.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-div">
+                <a href="#">本周热销榜</a>
+                <p class="p1">大家都在买</p>
+                <p class="p2">—————————————————————————————————————————————————————————————</p>
+                <div class="one">
+                    <a href="#">
+                        <img src="hot1.jpg">
+                        <p class="p2">
+                            美到窒息的海+海岛控的梦想之地·深圳往返大溪地8天6晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                    
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="hot2.gif">
+                        <p class="p2">
+                            乐温泉 趣滑雪·杭州双飞长春/长白山5日自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="hot3.jpg">
+                        <p class="p2">
+                            赏雪樱花·重庆直飞日本本州6日跟团游</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="hot4.jpg">
+                        <p class="p2">
+                            武汉直飞厦门4天3晚自由行（五星/海景/网红/等多款酒店任选+住一晚</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-div">
+                <a href="#">休假去哪儿</a>
+                <p class="p2">—————————————————————————————————————————————————————————————</p>
+                <div class="one">
+                    <a href="#">
+                        <img src="holiday1.gif">
+                        <p class="p2">
+                            升级双人包炕·杭州到哈尔滨冰雪大世界/亚布力滑雪+雪乡5天4晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="holiday2.jpg">
+                        <p class="p2">
+                            成都出发摩洛哥13天10晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="holiday3.jpg">
+                        <p class="p2">
+                            成都往返北海5天4晚自由行+首尾北海+2晚涠洲岛+多酒店套餐海景房可选+专车接送机</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="holiday4.jpg">
+                        <p class="p2">
+                            春节立减千元+一价全包·马尔代夫鲁滨逊诺努岛7天5晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-div">
+                <a href="#">和你去看海</a>
+                <p class="p2">—————————————————————————————————————————————————————————————</p>
+                <div class="one">
+                    <a href="#">
+                        <img src="sea1.jpg">
+                        <p class="p2">
+                            春节亲子惠~即买即省·成都出发马尔代夫K岛/库拉玛提岛7天自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="sea2.gif">
+                        <p class="p2">
+                            6大免费福利任选·出海潜水/96h自驾车/自助晚餐·杭州直飞三亚5天自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="sea3.gif">
+                        <p class="p2">
+                            错峰游·西安直飞普吉岛6天4晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+                <div class="one">
+                    <a href="#">
+                        <img src="sea4.jpg">
+                        <p class="p2">
+                            【随心打卡亚特兰蒂斯】亲子蜜月·成都直飞三亚5天4晚自由行</p>
+                        <p class="p3">￥免费</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="turnback">
+        <a href="#" class="btn1">返回顶部︿</a>
+    </section>
+    
+    <section class="footer">
+        <div class="text-div">
+            <div class="text-div1">
+                <ul class="ul">
+                    <li>中国年轻一代用得更多的旅游网站</li>
+                    <li>上亿旅行者共同打造的"旅行神器"</li>
+                    <li>60,000 多个全球旅游目的地</li>
+                    <li>600,000 个细分目的地新玩法</li>
+                    <li>760,000,000 次攻略下载</li>
+                    <li>38,000 家旅游产品供应商</li>
+                </ul>
+            </div>
+            <div class="text-div1">
+                <ul class="ul">
+                    <li><a href="#">关于我们 联系我们</a></li>
+                    <li><a href="#">隐私政策 商标声明</a></li>
+                    <li><a href="#">服务协议</a></li>
+                    <li><a href="#">商城平台服务协议</a></li>
+                    <li><a href="#">网络信息侵权通知指引</a></li>
+                    <li><a href="#">旅游网服务监督员</a></li>
+                    <li><a href="#">网站地图 加入我们</a></li>
+                </ul>
+            </div>
+            <div class="text-div1">
+                <ul class="ul">
+                    <li><a href="#">旅游攻略</a></li>
+                    <li><a href="#">旅游特价</a></li>
+                    <li><a href="#">旅游问答</a></li>
+                    <li><a href="#">旅游指南</a></li>
+                    <li><a href="#">旅游资讯</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="qRcode-div">
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4>人的一生，一定要有一次属于自己的旅行！</h4>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
