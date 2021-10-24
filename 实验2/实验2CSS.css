@@ -1,0 +1,33 @@
+html{
+    background-color: lavenderblush;
+}
+
+.div1{
+    background-color: burlywood;
+    width: 1887px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.div2{
+    background-color: ivory;
+}
+
+.div3{
+    width: 1887px;
+    height: 146px;
+    background-color: #D3E2FF;
+}
+
+.d1{
+    background-color: white;
+    width: 200px;
+    height: 120px;
+    float: left;
+    border: 1px solid ;
+    margin-top: 12px;
+    margin-left: 140px;
+    text-align: center;
+    background-color: turquoise;
+}
+

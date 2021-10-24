@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+</head>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-massive" style="max-width: 30em !important; margin-left: 700px;" >
+    <div class="ur container">
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                <h2 class="ui teal image header">
+                    <div class="content">
+                        用户注册
+                    </div>
+                </h2>
+                <form id="fff" name="fff" class="ui large form">
+                    <div class="ui  segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user green icon"></i>
+                                <input id="nickname" type="text" name="nickname" placeholder="姓名">
+                            </div>
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input id="password" type="password" name="password" placeholder="密码">
+                            </div>
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input id="password1" type="password" name="password1" placeholder="确认密码">
+                            </div>
+                            <div>
+                                <div class="ui left icon input">
+                                    <i class="envelope icon"></i>
+                                    <input id="email" type="email" name="email" placeholder="邮箱">
+                                </div>
+                            </div>
+                            <div class="ui left icon input">
+                                <i class="barcode icon"></i>
+                                <input id="age" type="text" name="age" placeholder="年龄">
+                            </div>
+                            <div class="ui left icon input">
+                                <i class="barcode icon"></i>
+                                <input id="weight" type="text" name="weight" placeholder="体重">
+                            </div>
+                        </div>
+                        <button class="ui fluid large teal submit button" onclick="check()">注 册</button>
+                    </div>
+                    <div class="ui error mini message"></div>
+                    <span id="tishi"></span>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+
+
+<script>
+    $('.ui.form').form({
+        fields: {
+            nickname: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入姓名'
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入密码'
+                }]
+            },
+            password1:{
+              identifier:'password1',
+              rules: [{
+                    type: 'empty',
+                    prompt: '请输入确认密码'
+                }]
+            },
+            email: {
+                identifier: 'email',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入邮箱'
+                }]
+            },
+            age: {
+                identifier: 'age',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入年龄'
+                }]
+            },
+            weight: {
+                identifier: 'weight',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入体重'
+                }]
+            },
+        }
+    });
+</script>
+<script>
+    function check(){
+    var password  = document.getElementById("password").value;
+    var password1  = document.getElementById("password1").value;
+    if(password!==password1){
+        document.getElementById("tishi").innerHTML="<br><font color='red'>两次密码不一致</font>";
+        document.getElementById("submit").disabled =true;
+    }
+    if(password.length < 8){
+        document.getElementById("tishi").innerHTML="<br><font color='red'>密码长度不能小于8</font>";
+    }
+
+    var age = $("#age");
+    if(age < 8){
+        document.getElementById("tishi").innerHTML="<br><font color='red'>年龄太小</font>";
+    }
+
+    var weight = $("#weight");
+    if(weight > 150 || weight < 30){
+        document.getElementById("tishi").innerHTML="<br><font color='red'>体重有误</font>";
+    }
+}
+</script>
+</body>
+</html>
