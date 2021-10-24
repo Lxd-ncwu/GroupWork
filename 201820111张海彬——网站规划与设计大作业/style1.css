@@ -1,0 +1,110 @@
+body
+{
+    background:white;
+}
+.letstravel
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 30px 90px;
+    font-size: 50px;
+    font-weight:bold;
+    color: black;
+    text-decoration: none;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    background: linear-gradient(to top,white,transparent);
+}
+.about
+{
+    width: 100%;
+    display: flex;
+    padding-bottom: 0%;
+    border-style: solid;
+    border-radius: 15px;
+}
+.about .imgbx{
+    position: relative;
+    min-width: 25%;
+    width: 25%;
+    min-height: 250px;
+}
+.about .imgbx img
+{
+    border-radius: 15px;
+}
+.about .imgbx1{
+    position: relative;
+    min-width: 25%;
+    width: 25%;
+    min-height: 200px;
+    right: 20px;
+}
+.about .imgbx1 img
+{
+    border-radius: 15px;
+}
+.about .first
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+}
+.about .second
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+}
+.titletext
+{
+    font-weight: 600;
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text
+{
+    color:black;
+    font-size: 1em;
+}
+
+.btn
+{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+.turnback .btn1
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    left: 629px;
+}

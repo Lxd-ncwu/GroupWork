@@ -1,0 +1,111 @@
+body
+{
+    background: #111;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+
+.banner .content
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+.banner .content h2
+{
+    color: #fff;
+    font-size: 5em;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 1.2em;
+}
+.destination
+{
+    text-align: center;
+    color: #fff;
+}
+.destination .content
+{
+    text-align: center;
+    color: #fff;
+}
+.destination .destinationList
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destination .destinationList .box
+{
+    position: relative;
+    min-width: 350px;
+    height: 480px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+}
+.destination .destinationList:hover .box
+{
+    opacity: 0.2;
+}
+.destination .destinationList .box:hover
+{
+    opacity: 1;
+}
+.destination .destinationList .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.destination .destinationList .box .content
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn
+{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
+.turnback .btn1
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    left: 629px;
+}
+

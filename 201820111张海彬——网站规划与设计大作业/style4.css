@@ -1,0 +1,214 @@
+body
+{
+    background: white;
+}
+.letstravel
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 30px 90px;
+    font-size: 50px;
+    font-weight:bold;
+    color: black;
+    text-decoration: none;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner p
+{
+    text-align: center;
+}
+.banner:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+    background: linear-gradient(to top,white,transparent);
+}
+.about
+{
+    width: 1200px;
+    height: 1600px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+.about .top
+{
+    width: 1075px;
+    height: 500px;
+}
+.about .top .left
+{
+    width: 250px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+.top-left-div
+{
+    width: 250px;
+    height: 62px;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: #ff9d00;
+}
+.top-left-div img
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.top-left-div .div1
+{
+    width: 230px;
+    height: 20px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.top-left-div .div1 a
+{
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+.top-left-div .a2
+{
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    float: left;
+    text-decoration: none;
+}
+.top-left-div .a1
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 35px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+
+.about .top .right
+{
+    width: 750px;
+    height: 375px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+}
+.about .top .right ul{
+    width:750px;
+    height: 375px;
+    position: absolute;
+    border-radius: 15px;
+}
+.about .top .right li{
+    float:left;    
+    width:750px;
+    height:375px;
+    list-style: none;
+    border-radius: 15px;
+}
+.about .top .right li img{
+    width: 750px;
+    height: 375px;  
+    border-radius: 15px;
+}
+.top-right-div
+{
+    width: 750px;
+    height: 80px;
+    margin-top: 380px;
+}
+.top-right-div img
+{
+    width: 200px;
+    height: 60px;
+    margin-left: 40px;
+}
+.about .bottom
+{
+    width: 1075px;
+    height: 1050px;
+    margin-top: 20px;
+}
+.bottom-div
+{
+    width: 1075px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.bottom-div a
+{
+    text-decoration: none;
+    color: #fb6720;
+    font-size: 25px;
+    float: left;
+}
+.bottom-div .p1
+{
+    float: left;
+    margin-left: 5px;
+    margin-top: 12px;
+    color: #999;
+    font-size: 18px;
+}
+.bottom-div .p2
+{
+    color: rgba(102, 102, 102, 0.733);
+}
+.bottom-div .one
+{
+    width: 250px;
+    height: 230px;
+    margin-right: 18px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #666;
+}
+.bottom-div .one img
+{
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+}
+.bottom-div .one .p2
+{
+    color: black;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+}
+.bottom-div .one .p3
+{
+    font-size: 22px;
+}
+.turnback .btn1
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    left: 600px;
+}

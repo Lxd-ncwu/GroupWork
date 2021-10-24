@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppings',sans-serif;
+}
+section
+{
+    position: relative;
+    padding: 60px;
+}
+.header
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 60px; 
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px #888888;
+}
+.header .logo
+{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.header .toggle img
+{
+    max-width: 40px;
+    cursor: pointer;
+}
+.fitBg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dropbtn {
+
+    border: none;
+    cursor: pointer;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 80px;
+}
+.dropdown .head
+{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 110px;
+    
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: teal;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.footer
+{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #3c3c3c;
+}
+.footer .text-div
+{
+    height: 200px;
+    width: 850px;
+    float: left;
+}
+.text-div1
+{
+    height: 200px;
+    width: 260px;
+    float: left;
+    margin-left: 20px;
+}
+.text-div1 .ul li
+{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+    color: #c2c2c2;
+}
+.text-div1 .ul li a
+{
+    text-decoration: none;
+    color: #c2c2c2;
+}
+.footer .qRcode-div
+{
+    height: 200px;
+    width: 500px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.qRcode-div1
+{
+    height: 200px;
+    width: 140px;
+    float: left;
+    margin-left: 20px;
+}
+.qRcode-div1 img
+{
+    height: 100px;
+    width: 100px;
+}
+.qRcode-div1 p
+{
+    margin-left: 25px;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #c2c2c2;
+}
+.footer .bottom
+{
+    height: 150px;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .bottom h4
+{
+    color: #c2c2c2;
+    font-size: 20px;
+}
+.footer .bottom .sci
+{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.footer .bottom .sci li
+{
+    list-style: none;
+}
+.footer .bottom .sci li a
+{
+    text-decoration: none;
+    margin: 0 20px;
+}
+.footer .bottom .sci li a img
+{
+    filter: invert(1);
+    max-width: 40px;
+}

@@ -1,0 +1,129 @@
+body
+{
+    background: white;
+}
+.letstravel
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 30px 90px;
+    font-size: 50px;
+    font-weight:bold;
+    color: black;
+    text-decoration: none;
+}
+.banner
+{
+    width: 100%;
+    min-height: 101vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .login
+{
+    width: 750px;
+    height: 420px;
+    background-color: white;
+    position: relative;
+    border-radius:20px;
+}
+.banner .login .left
+{
+    width: 450px;
+    height: 420px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner .login .left .p1
+{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(113,115,118,1);
+}
+.banner .login .left .p2
+{
+    margin-top: 105px;
+    font-size: 15px;
+    font-weight: 400;
+    float: left;
+    margin-left: 30px;
+    color: rgba(113,115,118,1);
+}
+.banner .login .left .form-div1
+{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: orange;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.banner .login .left .form-div1 a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.banner .login .left .img
+{
+    float: left;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.banner .login .left .img img
+{
+    width: 55px;
+    height: 55px;
+    margin-left: 15px;
+}
+.form-div
+{
+    float: right;
+    margin-right: 55px;
+}
+.form-div a
+{
+    text-decoration: none;
+    color: rgba(113,115,118,1);
+    font-size: 10px;
+}
+.form .user
+{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #f6f7f9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.banner .login .right
+{
+    width: 300px;
+    height: 420px;
+    float: left;
+}
+.banner .login .right img
+{
+    width: 300px;
+    height: 420px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+.banner:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+    background: linear-gradient(to top,white,transparent);
+}
