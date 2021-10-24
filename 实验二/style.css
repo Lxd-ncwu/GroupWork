@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  body {
+	background-color: #f3f5f7;
+  }
+  .w {
+	width: 1200px;
+	margin: 0 auto ;
+  }
+  a {
+	text-decoration: none;
+  }
+  li {
+	list-style: none   ;
+  }
+  .header {
+	height: 100px;
+	font-size: 18px;
+	color: #424243;
+  }
+  .header .logo {
+	background: url(image/logo.png) no-repeat left;
+	height: 100px;
+	width: 200px;
+	float: left;
+  }
+  .header .daohang {
+	float: left;
+	margin: 0 70px;
+	width: 255px;
+	height: 100px;
+  }
+  .header .daohang a {
+	float: left;
+	display: block;
+	margin: 35px 18px 35px 0;
+	padding: 0 12px;
+	height: 30px;
+	color: #2f2f46;
+  }
+  .header .daohang a:hover {
+	border-bottom: #00a4ff 2px solid;
+  }
+  .header .daohang .last {
+	margin-right: 0;
+  }
+  .header .sousuo {
+	float: left;
+	margin: 30px 30px 30px 25px ;
+	height: 40px;
+	width: 410px;
+	font-size: 14px;
+  }
+  .header .sousuo .sousuolan {
+	float: left;
+	height: 36px;
+	width: 339px;
+	padding-left: 15px;
+	border: #00a4ff 2px solid;
+	color: #cececf;
+  }
+  .header .sousuo .sousuoanniu {
+	float: left;
+	border: 0;
+	width: 50px;
+	height: 40px;
+  }
+  
+  .banner {
+	height: 420px;
+	background-color: #1c036c;
+  }
+  .banner .datu {
+	float: left;
+	height: 420px;
+	width: 1200px;
+	background: url(image/banner2.png) no-repeat left;
+  }
+  .banner .zuolan {
+	float: left;
+	width: 190px;
+	height: 420px;
+	background-color: rgba(19, 1, 75, 0.8);
+	font-size: 15px;
+  }
+  .banner .zuolan ul {
+	float: left;
+	margin: 30px 20px;
+	width: 150px;
+	height: 370px;
+  }
+  .banner .zuolan ul li {
+	width: 150px;
+	height: 15px;
+	margin-bottom: 28px;
+  }
+  .banner .zuolan ul .hanzi {
+	color: #ffffff;
+  }
+  .banner .zuolan ul .jiantou {
+	display: block;
+	float: right;
+	color: #ffffff;
+  }
+  .banner .zuolan ul li:hover a {
+	color: #00b4ff;
+  }
+  .banner .youlan {
+	float: left;
+	width:1000px;
+	height: 500px;
+	background-color: #ffffff;
+	margin-top: 50px;
+  }
+  .banner .youlan .kechengbiaobiaoti {
+	height: 50px;
+	background-color: #9bceea;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+  }
+  .banner .youlan .kechengbiaobiaoti h2 {
+	font-size: 18px;
+  }
+  .banner .youlan .kecheng {
+	padding: 0 20px;
+  }
+  .banner .youlan .kecheng .xiangxikecheng {
+	height: 27px;
+	padding: 19px 0;
+	border-bottom: 1px solid #efefef;
+  }
+  .banner .youlan .kecheng h4 {
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+  }
+  .banner .youlan .kecheng p {
+	color: #bdbdbd;
+	font-size: 12px;
+  }
+  .banner .youlan .kecheng .quanbukecheng {
+	width: 190px;
+	height: 38px;
+	border: 1px solid #00a4ff;
+	margin-top: 5px;
+	text-align: center;
+  }
+  .banner .youlan .kecheng .quanbukecheng a {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 38px;
+	color: #00a4ff;
+  }
+ 
+  .footer {
+	height: 415px;
+	background-color: #ffffff;
+  }
+  .footer .w {
+	text-align: center;
+	padding-top: 35px;
+  }
+  .footer .w .zuolan1 {
+	text-align: center;
+  }
+  .footer .w .zuolan1 p {
+	font-size: 12px;
+	color: #666;
+	margin: 20px 0 15px 0;
+  }
+  .footer .w .zuolan1 a {
+	display: block;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #00a4ff;
+	color: #00a4ff;
+	line-height: 35px;
+	text-align: center;
+  }
+  
