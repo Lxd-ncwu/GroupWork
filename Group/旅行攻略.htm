@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行攻略</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="PublicStyle.css">
+    <script>
+        var i=0;
+        var arr=new Array(); 
+ 
+        arr[0]="cut1.png";
+        arr[1]="cut2.png";
+        arr[2]="cut3.png";
+        arr[3]="cut4.png";
+ 
+ 
+        function slide_photos()
+        {
+            var photo=document.getElementById("slide_photo");
+            if (i==arr.length-1) 
+            {
+                i=0;
+            }
+            else
+            {
+                i+=1;
+            }
+            photo.src=arr[i]; 
+        }
+        setInterval("slide_photos()",2000);
+    </script>
+</head>
+<body>
+    <section class="header">
+        <a href="#" class="logo"><h2>🏝Travel</h2></a>
+        <div class="toggle">              
+            <div class="dropdown">
+                <a href="首页.htm" class="head">首页</a>
+            </div>
+            <div class="dropdown">
+                <a href="去旅行.htm" class="head">去旅行</a>
+            </div>
+            <div class="dropdown">
+                <a href="旅行攻略.htm" class="head">旅游攻略</a>
+            </div>
+            <div class="dropdown">
+                <a href="登录.htm" class="head">登录 /</a><a href="注册.htm" class="head"> 注册</a>
+            </div>
+            <div class="dropdown">
+                <img src="toggle.png" class="dropbtn">
+              </div>
+    </section>
+    <section class="banner">
+        <img src="fengjing1.jpg" class="fitBg">
+        <p class="letstravel">旅行攻略<br>让旅行更简单</p>
+    </section>
+
+    <section class="about">
+        <div class="top">
+            <div class="left">
+                <div class="top-left-div"><a href="#">海外冬季目的地精选</a><p>></p></div>
+                <div class="top-left-div"><a href="#">国内冬季目的地推荐</a><p>></p></div>
+                <div class="top-left-div"><a href="#">奔向海岛</a><p>></p></div>
+                <div class="top-left-div"><a href="#">主题推荐</a><p>></p></div>
+                <div class="top-left-div"><a href="#">度假圣地</a><p>></p></div>
+                <div class="left-last">
+                    <img src="Travel.png"><a href="#">旅游攻略查询<br>https://you.ctrip.com/</a><p>——————————————</p>
+                </div>
+            </div>
+            <div class="right">
+            <ul id="photos">
+                <li><img id="slide_photo" src="cut1.png"></li>
+            </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            
+            <div class="left">
+               <img src="leftlast.png">
+               <p>————————————</p>
+               <div class="bottom-left-div">1 <p>三亚</p></div>
+               <div class="bottom-left-div">2 <p>广州</p></div>
+               <div class="bottom-left-div">3 <p>厦门</p></div>
+               <div class="bottom-left-div">4 <p>大理</p></div>
+               <div class="bottom-left-div">5 <p>西双版纳</p></div>
+               <div class="bottom-left-div">6 <p>丽江</p></div>
+               <div class="bottom-left-div">7 <p>重庆</p></div>
+               <div class="bottom-left-div">8 <p>云南</p></div>
+               <div class="bottom-left-div">9 <p>昆明</p></div>
+               <div class="bottom-left-div">10 <p>南京</p></div>
+            </div>
+            <div class="right">
+                <div class="bottom-right-div">
+                    <a href="#" class="a1">
+                        <p class="p1">杭州旅行全攻略</p>
+                        <p>为你能够在来杭州之前，对杭州能有一个简单详细的了解。愿你能够对杭州一见钟情。给你的旅行在开始之前就增加些幸福感~</p><br>
+                        <img src="hangzhou1.png">
+                        <img src="hangzhou2.png">
+                        <img src="hangzhou3.png">
+                    </a>
+                </div>
+                <div class="bottom-right-div">
+                    <a href="#" class="a1">
+                        <p class="p1">在最好的季节 看最美的银杏——昆明大理腾冲八日游</p>
+                        <img src="hangzhou2.png">
+                        <p class="p2">
+                            福多多无限飞第二站： 昆明
+                            888元的福航无限飞只剩一个半月期限，
+                            本着每月一飞是对无限飞最起码的尊重，
+                            一次回本，二次超值，三次血赚的想法，
+                            果断把年假和周末的休息日加起来，
+                            去 云南 玩9天，年底奢侈一把！
+                            在秋天最好的季节，
+                            去 腾冲 银杏村看最美的风景；
+                            赏一次 和顺 古镇的落日、
+                            泡一回 腾冲 柏联温泉；
+                            漫步 大理 古城，苍山洱海一眼万年，
+                            打卡最美寺庙——寂照痷；
+                            住开满柿子树小院——云朵情书客栈
+                        </p>
+                    </a>
+                </div>
+                <div class="bottom-right-div">
+                    <a href="#" class="a1">
+                        <p class="p1">为了这棵树，我专门跑了趟中东</p>
+                        <img src="snow.png">
+                        <p class="p2">
+                            这是一棵孤独的树， 死海 上唯一的“生命”
+                            我在ins上看到它的那一刻直接尖叫！直接决定向着它的定位进发！
+                            📍 以色列
+                            不过这棵树可不是说见就能见的，可谓九九八十一难啊 
+                            历时三天，斥资。。。（说多了都是泪）
+                            这里不剧透了，关于这棵树的故事，请将目录翻到【 死海 】这一章
+                            .
+                            当然了，既然决定去 中东 了，肯定不能只去 以色列 ，肯定要把旁边种草已久的 约旦 也一起拔草了！
+                            在以约的15天，我们朝圣了宗教圣地，漂浮了 死海 ，重游了火星救援的拍摄地，看（拍）星空彻夜未眠，还发现了一个当地人都不知道的怪石嶙峋的小众海滩！
+                        </p>
+                    </a>
+                </div>
+                <div class="bottom-right-div">
+                    <a href="#" class="a1">
+                        <p class="p1">走，我们去那拉提草原采集春日第一捧阳光</p>
+                        <p>春天如约而至 那拉提草原的美景在沉睡了半年之后 终于又再一次绽放</p><br>
+                        <img src="spring1.png">
+                        <img src="spring2.png">
+                        <img src="spring3.png">
+                    </a>
+                </div>
+                <div class="bottom-right-div">
+                    <a href="#" class="a1">
+                        <p class="p1">普吉岛体验深潜攻略，潜水点推荐和潜水船大揭秘！</p>
+                        <p>99%的人来到普吉岛都会选择出海潜水，但如果没有潜水证的人，该怎么感受热带海洋水下世界的魅力呢？
+                            别担心，普吉岛的多个离岛都有体验潜水可以参加。不过选择哪个岛屿的海域去体验，选择什么船型出海，第一次体验潜水需要注意什么?别担心，看完攻略就知道</p><br>
+                        <img src="island1.png">
+                        <img src="island2.png">
+                        <img src="island3.png"></a>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <section class="turnback">
+        <a href="#" class="btn1">返回顶部︿</a>
+    </section>
+    
+    <section class="footer">
+        <div class="text-div">
+            <div class="text-div1">
+                <ul class="ul">
+                    <li>中国年轻一代用得更多的旅游网站</li>
+                    <li>上亿旅行者共同打造的"旅行神器"</li>
+                    <li>60,000 多个全球旅游目的地</li>
+                    <li>600,000 个细分目的地新玩法</li>
+                    <li>760,000,000 次攻略下载</li>
+                    <li>38,000 家旅游产品供应商</li>
+                </ul>
+            </div>
+            <div class="text-div1">
+                <ul class="ul">
+                    <li><a href="#">关于我们 联系我们</a></li>
+                    <li><a href="#">隐私政策 商标声明</a></li>
+                    <li><a href="#">服务协议</a></li>
+                    <li><a href="#">商城平台服务协议</a></li>
+                    <li><a href="#">网络信息侵权通知指引</a></li>
+                    <li><a href="#">旅游网服务监督员</a></li>
+                    <li><a href="#">网站地图 加入我们</a></li>
+                </ul>
+            </div>
+            <div class="text-div1">
+                <ul class="ul">
+                    <li><a href="#">旅游攻略</a></li>
+                    <li><a href="#">旅游特价</a></li>
+                    <li><a href="#">旅游问答</a></li>
+                    <li><a href="#">旅游指南</a></li>
+                    <li><a href="#">旅游资讯</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="qRcode-div">
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+            <div class="qRcode-div1">
+                <img src="qRcode.png">
+                <p>了解更多<br>请勿扫码</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4>人的一生，一定要有一次属于自己的旅行！</h4>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
